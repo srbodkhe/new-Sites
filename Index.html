@@ -1,0 +1,48 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Template Searce</title>
+
+    <!-- Bootstrap -->
+   <?!= HtmlService.createHtmlOutputFromFile('Stylesheet').getContent(); ?>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="container-fluid">
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+    
+    <form id="frmData">
+  <div class="form-group">
+    <label for="txt fnameLname">Your  Name</label>
+    <input type="text" class="form-control" id="fname" name="fname" placeholder="Your Name">
+  </div>
+    <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" name="txtEmail" id="txtEmail" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">I will help you to develope App Script.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleTextarea">Feedback</label>
+    <textarea class="form-control" id="txtFeedback" name="txtFeedback" rows="3" ></textarea>
+  </div>
+  <input type="button" class="btn btn-primary" value="Submit" onclick="addFeedback()">
+</form></div>
+</div>
+</div>
+<?!= HtmlService.createHtmlOutputFromFile('JavaScript').getContent(); ?>
+
+  </body>
+</html>
+ 
