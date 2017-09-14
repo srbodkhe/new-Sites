@@ -11,7 +11,6 @@
   	try {
     var frmObj=document.getElementById("frmData");
     var validate=false;
-    alert($("#fname").val())
     if($("#fname").val()!=""){
     validate=true;
     }else if($("#txtEmail").val()!=""){
@@ -35,6 +34,7 @@
   function displayResult(serverResponce) {
   	try {
   		alert("Thank you for your feedback, Please check your email, I have shared code");
+        document.getElementById("frmData").reset();
   	} catch (e) {
   		console.log(e);
   	}
